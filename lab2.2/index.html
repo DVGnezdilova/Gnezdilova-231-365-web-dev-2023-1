@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма обратной связи</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form method="post" action="https://httpbin.org/post">
+            <fieldset>
+                <div class="form-group">
+                    <h1>Форма аутентификации</h1>
+                    <label for="login">Введите логин</label>
+                    <input type="text" name="login" id="login" placeholder="username" required> <!--required обязательно для ввода-->
+                </div>
+                <div class="form-group">
+                    <label for="password">Введите пароль</label>
+                    <input type="password" name="password" id="password" placeholder="password" required>
+                </div>
+                <div class="form-grou">
+                    <input type="checkbox" name="file" id="file" multiple>
+                    <label for="agree">Запомнить меня</label>
+                </div>
+                <button type="submit">Войти</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
