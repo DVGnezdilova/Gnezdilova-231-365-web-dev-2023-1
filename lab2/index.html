@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма обратной связи</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="text-center">Форма обратной связи</h1>
+    <div class="container">
+        <form method="post" action="https://httpbin.org/post" enctype="multipart/form-data"> <!--enctype="multipart/form-data" отправляет не только название файла, но и читает его и отправляет содержимое-->
+            <div class="form-group">
+                <label for="fio">ФИО</label>
+                <input type="text" name="fio" id="fio" placeholder="Введите ФИО" required> <!--required обязательно для ввода-->
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Введите Email"  required>
+            </div>
+            <fieldset><!--набор полей-->
+                <legend>Откуда узнали о нас</legend>
+                <div class="form-group">
+                    <input type="radio" name="adv" id="adv" value="adv">
+                    <label for="adv">Реклама</label>
+                </div>
+                <div class="form-group">
+                    <input type="radio" name="friends" id="friends">
+                    <label for="friends">Друзья</label> 
+                </div>
+                <div class="form-group">
+                    <input type="radio" name="network" id="network">
+                    <label for="network">Социальные сети</label> 
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Категория обращения</legend>
+                <select name="category" id="category">
+                    <option value="negative">Жалоба</option>
+                    <option value="interest">Предложение</option>
+                    <option value="positive">Благодарность</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Текст сообщения</legend>
+                <textarea name="message" id="message" cols="90" rows="10" placeholder="Введите текст сообщения"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Добавить файлы</legend>
+                <input type="file" name="agree" id="agree" multiple>
+            </fieldset>
+            <fieldset>
+                <legend>Согласие</legend>
+                <input type="checkbox" name="file" id="file" multiple>
+                <label for="agree">Даю согласие на обработу персональных данных</label>
+            </fieldset>
+            <button type="submit">Отправить</button>
+            <figure class="pic">
+                <img src="images\51cced35fcd369a69cac1eb4d12f1475.png" alt="thanks">
+            </figure>
+        </form>
+    </div>
+    
+</body>
+</html>

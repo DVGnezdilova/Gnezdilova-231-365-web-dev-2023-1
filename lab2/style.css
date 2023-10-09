@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap'); /*ссылка на шрифт*/
+
+*{
+    font-family: 'Gabarito', cursive; /*вставляем шрифт*/
+}
+
+body {
+    margin: 0; /*внешние отступы*/
+    background-color: #e6caf2;  
+}
+
+.form-group{
+    margin-bottom: 20px; /*1.25rem = 20px*/
+}
+
+.text-center{
+    text-align: center;
+}
+
+.container{
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+button {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .pic{
+    height: 400px;
+    text-align: center; /*картинку в центр*/
+}
+.pic img{
+    height: 100%; /*делаем так, чтобы не накладывалась на текст*/
+}
