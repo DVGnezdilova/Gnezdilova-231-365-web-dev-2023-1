@@ -2,13 +2,13 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--оптимизация для размера экрана смартфона-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>«Books for everyone» </title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="print.css" media="print">
 </head>
 <body>
-    <header class="header"><!-- не даем схлопываться с помощью clearfix-->
+    <header class="header">
         <div class="container d-flex"> 
             <nav class="main-menu">
                 <ul>
@@ -20,61 +20,61 @@
                 </ul>
             </nav>
             <div class="profile"> 
-                <a href="#"><b>Вход</b></a> <!-- # никуда не отссылается-->
+                <a href="#"><b>Вход</b></a> 
             </div>
         </div>
     </header>
     <main class="d-flex">
         <div class="container">
-            <aside class="sidebar"><!-- добавляем дополнительное содержимое(панельку справа)-->
+            <aside class="sidebar">
                 <form>
                     <fieldset class="fieldset">
                         <legend class="leg"><b>Жанры</b></legend>
                         <div>
                             <input type="checkbox" name="genre" id="genre1">
-                            <label for="genre1">Фэнтези</label> <!-- for отссылает к id-->
+                            <label for="genre1">Фэнтези</label> 
                         </div>
                         <div>
                             <input type="checkbox" name="genre" id="genre2">
-                            <label for="genre2">Детективы</label> <!-- for отссылает к id-->
+                            <label for="genre2">Детективы</label>
                         </div>
                         <div>
                             <input type="checkbox" name="genre" id="genre3">
-                            <label for="genre3">Ужасы</label> <!-- for отссылает к id-->
+                            <label for="genre3">Ужасы</label> 
                         </div>
                         <div>
                             <input type="checkbox" name="genre" id="genre4">
-                            <label for="genre4">Любовные романы</label> <!-- for отссылает к id-->
+                            <label for="genre4">Любовные романы</label> 
                         </div>
                         <div>
                             <input type="checkbox" name="genre" id="genre5">
-                            <label for="genre5">Комиксы</label> <!-- for отссылает к id-->
+                            <label for="genre5">Комиксы</label> 
                         </div>
                     </fieldset>
                     <fieldset class="fieldset">
                         <legend class="leg"><b>Авторы</b></legend>
                         <div>
                             <input type="radio" name="writer" id="writer1">
-                            <label for="writer1">Маас Сара Дж.</label> <!-- for отссылает к id-->
+                            <label for="writer1">Маас Сара Дж.</label> 
                         </div>
                         <div>
                             <input type="radio" name="writer" id="writer2">
-                            <label for="writer2">Ремарк Эрих Мария</label> <!-- for отссылает к id-->
+                            <label for="writer2">Ремарк Эрих Мария</label> 
                         </div>
                         <div>
                             <input type="radio" name="writer" id="writer3">
-                            <label for="writer3">Лавринович Ася</label> <!-- for отссылает к id-->
+                            <label for="writer3">Лавринович Ася</label> 
                         </div>
                         <div>
                             <input type="radio" name="writer" id="writer4">
-                            <label for="writer4">Аркадий и Борис Стругацкие</label> <!-- for отссылает к id-->
+                            <label for="writer4">Аркадий и Борис Стругацкие</label> 
                         </div>
                         <div>
                             <input type="radio" name="writer" id="writer5">
-                            <label for="writer5">Ольга Примаченко</label> <!-- for отссылает к id-->
+                            <label for="writer5">Ольга Примаченко</label> 
                         </div>
                     </fieldset>
-                    <button type="submit" class="buy-btn">Применить</button> <!-- submit отправлякт данные на сервер-->
+                    <button type="submit" class="buy-btn">Применить</button> 
                 </form>
             </aside>
             <div class="page-content">
