@@ -1,4 +1,4 @@
-*, *::after, *::before{ /*альтернативная блочная модель, селектор * соответсвует всем элементам на странице*/
+*, *::after, *::before{ 
     box-sizing: border-box;
 }
 
@@ -7,7 +7,7 @@ body{
 }
 
 .header{
-    background-color: #d4a5b1; /* #a6d4a5*/
+    background-color: #d4a5b1; 
     padding: 1.25rem 15px;
     border-bottom: 5px solid #ce6d85;
 }
@@ -18,13 +18,13 @@ body{
 }
 
 .footer{
-    background-color: #d4a5b1; /* #a6d4a5*/
+    background-color: #d4a5b1; 
     padding: 1.25rem 15px;
     font-weight: bold;
     font-size: 20px;
 }
 
-/*.clearfix::after{ /*добавляем псевдоэлемент (можем добавлять данные на сайт через css)*/
+/*.clearfix::after{ 
     /*content:'';
     display: block;
     clear:both;}*/
@@ -41,7 +41,7 @@ body{
 }
 
 .main-menu ul{
-    list-style: none;/*обнуляем точки возле эл-в списка*/
+    list-style: none;
     margin:0;
     padding:0;
     font-size: 30px;
@@ -58,11 +58,11 @@ body{
 
 .container{
     max-width: 95%;
-    margin: 0 auto; /*отцентрировали*/
+    margin: 0 auto; 
 }
 
 .sidebar{
-    float:left; /*прижимаем к левому краю*/
+    float:left; 
     padding:1rem;
     width: 15rem;
     flex-shrink: 0;
@@ -79,14 +79,14 @@ body{
 }
 
 .products { 
-    display: flex;/*чтобы элементы были в линию*/
-    flex-wrap: wrap;/*чтобы начинались с новой строки*/
-    gap: 10px;/*чтобы не слипались элементы*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .product-card{
-    /*display: inline-block;*/ /*блоки в линию*/
-    display: flex; /*родитель, картинка слева*/
+    /*display: inline-block;*/ 
+    display: flex; 
     width: 31rem;
     height: 21.9rem;
     background-color: #eadac4;
@@ -104,8 +104,7 @@ body{
 .product-image img{
     width: 100%;
     height: 100%;
-    object-fit: cover; /*не нарушаем пропорции картинки*/
-}
+    object-fit: cover;
 
 .product-details{
     /*float: right;*/
@@ -118,8 +117,8 @@ body{
     color: #ce6d85;
     border-radius: 5px;
     font-size: 1rem;
-    font-weight: bold; /*ужирняет текст*/
-    cursor:pointer; /*при наведении курсор меняется*/
+    font-weight: bold; 
+    cursor:pointer; 
     border: solid #ce6d85;
     border-radius: 5px;
     padding: 5px;
