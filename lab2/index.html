@@ -9,16 +9,16 @@
 <body>
     <h1 class="text-center">Форма обратной связи</h1>
     <div class="container">
-        <form method="post" action="https://httpbin.org/post" enctype="multipart/form-data"> <!--enctype="multipart/form-data" отправляет не только название файла, но и читает его и отправляет содержимое-->
+        <form method="post" action="https://httpbin.org/post" enctype="multipart/form-data"> 
             <div class="form-group">
                 <label for="fio">ФИО</label>
-                <input type="text" name="fio" id="fio" placeholder="Введите ФИО" required> <!--required обязательно для ввода-->
+                <input type="text" name="fio" id="fio" placeholder="Введите ФИО" required> 
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="Введите Email"  required>
             </div>
-            <fieldset><!--набор полей-->
+            <fieldset>
                 <legend>Откуда узнали о нас</legend>
                 <div class="form-group">
                     <input type="radio" name="radio" id="adv" value="adv">
