@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap'); /*ссылка на шрифт*/
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap'); 
 
 *{
-    font-family: 'Gabarito', cursive; /*вставляем шрифт*/
+    font-family: 'Gabarito', cursive;
 }
 
 body {
-    margin: 0; /*внешние отступы*/
+    margin: 0; 
     background-image: url(images/back.jpg);  
 }
 
 .form-group{
-    margin-bottom: 20px; /*1.25rem = 20px*/
+    margin-bottom: 20px;
 }
 
 .text-center{
