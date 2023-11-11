@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--оптимизация для размера экрана смартфона-->
+    <title>«Books for everyone» </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="print.css" media="print">
+</head>
+<body>
+    <header class="header"><!-- не даем схлопываться с помощью clearfix-->
+        <div class="container d-flex"> 
+            <nav class="main-menu">
+                <ul>
+                    <li><b><a href="#mainstr">Главная</a></b></li>
+                    <li><b><a href="#mainstr">Каталог</a></b></li>
+                    <li><b><a href="indexsale.html">Акции</a></b></li>
+                    <li><b><a href="indexmag.html">Магазины</a></b></li>
+                    <li><b><a href="#contacts">Контакты</a></b></li>
+                </ul>
+            </nav>
+            <div class="profile"> 
+                <a href="#"><b>Вход</b></a> <!-- # никуда не отссылается-->
+            </div>
+        </div>
+    </header>
+    <main class="d-flex">
+        <div class="container">
+            <aside class="sidebar"><!-- добавляем дополнительное содержимое(панельку справа)-->
+                <form>
+                    <fieldset class="fieldset">
+                        <legend class="leg"><b>Жанры</b></legend>
+                        <div>
+                            <input type="checkbox" name="genre" id="genre1">
+                            <label for="genre1">Фэнтези</label> <!-- for отссылает к id-->
+                        </div>
+                        <div>
+                            <input type="checkbox" name="genre" id="genre2">
+                            <label for="genre2">Детективы</label> <!-- for отссылает к id-->
+                        </div>
+                        <div>
+                            <input type="checkbox" name="genre" id="genre3">
+                            <label for="genre3">Ужасы</label> <!-- for отссылает к id-->
+                        </div>
+                        <div>
+                            <input type="checkbox" name="genre" id="genre4">
+                            <label for="genre4">Любовные романы</label> <!-- for отссылает к id-->
+                        </div>
+                        <div>
+                            <input type="checkbox" name="genre" id="genre5">
+                            <label for="genre5">Комиксы</label> <!-- for отссылает к id-->
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <legend class="leg"><b>Авторы</b></legend>
+                        <div>
+                            <input type="radio" name="writer" id="writer1">
+                            <label for="writer1">Маас Сара Дж.</label> <!-- for отссылает к id-->
+                        </div>
+                        <div>
+                            <input type="radio" name="writer" id="writer2">
+                            <label for="writer2">Ремарк Эрих Мария</label> <!-- for отссылает к id-->
+                        </div>
+                        <div>
+                            <input type="radio" name="writer" id="writer3">
+                            <label for="writer3">Лавринович Ася</label> <!-- for отссылает к id-->
+                        </div>
+                        <div>
+                            <input type="radio" name="writer" id="writer4">
+                            <label for="writer4">Аркадий и Борис Стругацкие</label> <!-- for отссылает к id-->
+                        </div>
+                        <div>
+                            <input type="radio" name="writer" id="writer5">
+                            <label for="writer5">Ольга Примаченко</label> <!-- for отссылает к id-->
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="buy-btn">Применить</button> <!-- submit отправлякт данные на сервер-->
+                </form>
+            </aside>
+            <div class="page-content">
+                <section id="mainstr">
+                    <h1>Топ книг в этом месяце</h1>
+                    <div class="products">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/product1.jpg" alt="product1">
+                            </div>
+                            <div class="product-details">
+                                <header><b>К себе нежно. О.Примаченко</b></header>
+                                <p>
+                                    «К себе нежно» — это книга для тех, кто выбирает
+                                    себя. Для тех, кто долго не понимал и игнорировал
+                                    свои желания. Сдерживал свои чувства. Не принимал
+                                    свое тело. И никогда не знал, как это — праздновать
+                                    свою уникальность. Но сегодня хочет стать себе
+                                    другом.
+                                </p>
+                                <div class="action">
+                                    <button class="buy-btn">
+                                        <span>900&#8381;</span>
+                                        <span>Заказать</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/product2.jpg" alt="product2">
+                            </div>
+                            <div class="product-details">
+                                <header><b>Любовный эксперимент по-американски. Е.Армас</b></header>
+                                <p>
+                                    Елена Армас – испанская писательница и безнадежный романтик.
+                                    Ее дебютная книга «Испанский любовный обман» мгновенно стала международным бестселлером
+                                    и полюбилась читателям со всего мира, а продюсерская компания BCDF Pictures купила права
+                                    на экранизацию.
+                                </p>
+                                <div class="action">
+                                    <button class="buy-btn">
+                                        <span>680&#8381;</span>
+                                        <span>Заказать</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/product3.jpg" alt="product3">
+                            </div>
+                            <div class="product-details">
+                                <header><b>Дозоры: ночной, дневной, сумеречный. С.Лукьяненко</b></header>
+                                <p>
+                                    Первые три романа легендарного цикла "Дозоры" от отечественного фантаста номер один,
+                                    переведенного на два десятка языков.
+                                    Тайные боевые операции, жестокие интриги и высокая политика, белое пламя любви и ненависти,
+                                    где плавятся судьбы людей и Иных, отстаивающих свою истину…
+                                </p>
+                                <div class="action">
+                                    <button class="buy-btn">
+                                        <span>1600&#8381;</span>
+                                        <span>Заказать</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/product4.jpg" alt="product4">
+                            </div>
+                            <div class="product-details">
+                                <header><b>Математика. 1 класс. М.Моро, С.Волкова</b></header>
+                                <p>
+                                    Рабочая тетрадь по математике для 1 класса подготовлена к учебнику
+                                    "Математика. 1 класс", доработанному в соответствии с требованиями Федерального государственного
+                                    образовательного стандарта начального общего образования.
+                                </p>
+                                <div class="action">
+                                    <button class="buy-btn">
+                                        <span>400&#8381;</span>
+                                        <span>Заказать</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/product5.jpg" alt="product5">
+                            </div>
+                            <div class="product-details">
+                                <header><b>Поклонник. А.Джейн</b></header>
+                                <p>
+                                    Каждый день Ангелина Ланская получает цветы. Цветов всегда четное количество,
+                                    и она понятия не имеет, кто их отправитель. Загадочный поклонник намеренно сводит
+                                    ее с ума, играет, сажает на иглу адреналина и ожидания. Этот человек точно знает, чем ее зацепить.
+                                </p>
+                                <div class="action">
+                                    <button class="buy-btn">
+                                        <span>710&#8381;</span>
+                                        <span>Заказать</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/product6.jpg" alt="product6">
+                            </div>
+                            <div class="product-details">
+                                <header><b>ЖИВИ здесь и сейчас. Н.Равикант, Э.Йоргенсон </b></header>
+                                <p>
+                                    В сумасшедшей гонке за богатством и успехом давно нет места главному — жизни, наполненной счастьем, гармонией и изобилием. В этой книге ответы только на самые волнующие вопросы: как честность
+                                    и принципы приведут к богатству, почему то, как все работают, уже не работает и, главное — сколько нулей нужно для счастья?
+                                </p>
+                                <div class="action">
+                                    <button class="buy-btn">
+                                        <span>620&#8381;</span>
+                                        <span>Заказать</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/product7.jpg" alt="product7">
+                            </div>
+                            <div class="product-details">
+                                <header><b>Сказочный мир Шута. А.Князев</b></header>
+                                <p>
+                                    Перед вами уникальная книга, собравшая под обложкой результаты художественного творчества
+                                    Андрея Князева за 50 лет жизни. Здесь вы найдете не только обложки культовых альбомов
+                                    "Короля и Шута" и "КняZz", но и наброски героев песен, пейзажи, комиксы и даже фантастические декорации.
+                                </p>
+                                <div class="action">
+                                    <button class="buy-btn">
+                                        <span>1400&#8381;</span>
+                                        <span>Заказать</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/product8.jpg" alt="product8">
+                            </div>
+                            <div class="product-details">
+                                <header><b>Джейн Эйр. Ш.Бронте</b></header>
+                                <p>
+                                    Джейн Эйр давным-давно переросла свою героиню и стала почти что именем нарицательным.
+                                    Пусть Джейн не так уж хороша собой,
+                                    и жизнь ее вовсе не балует, но в конечном итоге она обретет свое счастье. Полный загадок,
+                                    порой трагических поворотов сюжета, этот роман был и остается символом веры, надежды и любви.
+                                </p>
+                                <div class="action">
+                                    <button class="buy-btn">
+                                        <span>200&#8381;</span>
+                                        <span>Заказать</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/product9.jpg" alt="product9">
+                            </div>
+                            <div class="product-details">
+                                <header><b>Язык шипов. Ли Бардуго</b></header>
+                                <p>
+                                    Сказания о прекрасных русалках и рыжебородых големах, монстрах и принцессах,
+                                    зачарованных городах и наводящих ужас лесах. Коллекция завораживающих историй с великолепными
+                                    цветными иллюстрациями — для всех любителей вселенной гришей и темного фэнтези.
+                                </p>
+                                <div class="action">
+                                    <button class="buy-btn">
+                                        <span>800&#8381;</span>
+                                        <span>Заказать</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/product10.jpg" alt="product10">
+                            </div>
+                            <div class="product-details">
+                                <header><b>Сон и Пепел. А.Анжело</b></header>
+                                <p>
+                                    Первый роман Young adult-трилогии, фэнтези, приключения.
+                                    Темные и светлые даэвы, их тайны, их прошлое и будущее, предательства и любовь.
+                                    Издание дополнено иллюстрациями художницы Altorina и картой мира на форзацах.
+                                </p>
+                                <div class="action">
+                                    <button class="buy-btn">
+                                        <span>500&#8381;</span>
+                                        <span>Заказать</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <section id="contacts">
+                <h2>Контактная информация</h2>
+                <p>
+                    <i>Почта:</i> <b>books4every1@mail.ru</b>
+                </p>
+                <p>
+                    <i>Телеграм:</i> <b>@Books4every1</b>
+                </p>
+                &copy; 2020 ООО «Books for everyone»
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
