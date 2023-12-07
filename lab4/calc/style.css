@@ -1,0 +1,33 @@
+.calc-container{
+    margin: 50px auto;
+    width: 350px;
+    height: 380px;
+    border-radius: 20px;
+    border:1px solid black;
+    background-color: rgb(240, 230, 242);
+
+}
+
+.key{
+    width: 60px;
+    height: 60px;
+    background: rgb(230, 181, 203);
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none; /*чтобы нельзя было выделить цифры как текст*/
+}
+
+.screen{
+    font-size: 35px;
+    display: flex;
+    justify-content: end;
+    margin:30px 15px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}

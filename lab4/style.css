@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 300px auto;
+    background-color: rgb(230, 181, 203);
+}
+
+ol{
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+}
