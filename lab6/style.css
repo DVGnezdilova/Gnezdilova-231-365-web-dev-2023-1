@@ -1,0 +1,21 @@
+.line{
+    margin: 2px  auto;
+    background-color: #978762;
+    height: 4px;
+    width: 200px;
+    margin-top: 2px;
+}
+
+button{
+    background-color: #978762;
+    border-radius: 7px;
+}
+
+input[type="email"], input[type="text"] {
+    width: 80%; 
+    margin-bottom: 10px;
+  }
+
+textarea {
+    width: 80%; 
+}
