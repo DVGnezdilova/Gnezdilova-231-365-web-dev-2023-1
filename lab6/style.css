@@ -12,10 +12,11 @@ button{
 }
 
 input[type="email"], input[type="text"] {
-    width: 80%; 
+    width: 100%; 
     margin-bottom: 10px;
   }
 
 textarea {
     width: 80%; 
 }
+

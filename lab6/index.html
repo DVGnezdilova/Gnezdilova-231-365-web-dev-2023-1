@@ -17,14 +17,14 @@
                         <h1>Coffee & Pages</h1>
                         <div>Кофейня в современной библиотеке.</div>
                     </div>
-                    <img class="col-lg-6" src="images/1.jpg" alt="1">
+                    <img class="col-lg-6 object-fit-cover" src="images/1.jpg" alt="1">
                 </div>
             </div>
         </section>
         <section class="about">
             <div class="container">
                 <div class="row px-5 py-5">
-                    <img class="col-lg-6" src="images/2.jpg" alt="2">
+                    <img class="col-lg-6 object-fit-cover" src="images/2.jpg" alt="2">
                     <div class="col-lg-6 text-center my-auto">
                         <h1 class="text-center">О  нас</h1>
                         <div class="line"></div>
@@ -43,31 +43,23 @@
             <div class="container">
                 <div class="row px-5 py-5 text-center">
                     <h1>Контакты</h1>
-                    <div class="col text-center my-auto">
+                    <div class="col text-center text-nowrap my-auto">
                         <h3>&#128222; 8 990 568 43 34</h3>
                         <h3>&#9993; yourcoffe@mail.ru</h3>
                     </div>
-                    <form action="https://httpbin.org/post" method="post" class="col">
-                        <h4>Оставить заявку</h4>
-
-                        <div class="w-100">
-                            <label for="email">Электронная почта:</label> 
-                            <br>
-                            <input type="email" id="email" placeholder="Введите почту..." name="email" required>
+                    <form action="https://httpbin.org/post" method="post" class="col my-auto text-nowrap">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Электронная почта:</label>
+                            <input class="form-control" type="email" id="email" placeholder="Введите почту..." name="email" required>
                         </div>
-
-                        <div class="col">
-                            <label for="name">Имя:</label>
-                            <br>
-                            <input type="text" id="name" placeholder="Введите имя..." name="name" required>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Имя</label>
+                            <input class="form-control" type="text" id="name" placeholder="Введите имя..." name="name" required>
                         </div>
-                    
-                        <div class="col">
-                            <label for="message">Сообщение:</label>
-                            <br>
-                            <textarea id="message" name="message" placeholder="Введите текст..." rows="10" required></textarea>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Сообщение:</label>
+                            <textarea class="form-control" id="message" name="message" placeholder="Введите текст..." rows="10" required></textarea>
                         </div>
-                        <button type="submit">Отправить</button>
                     </form>
                 </div>
             </div>
